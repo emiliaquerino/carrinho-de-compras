@@ -18,7 +18,7 @@ public class CartManager {
         String isDiscounted = scanner.next();
 
         if ("sim".equalsIgnoreCase(isDiscounted)) {
-            System.out.println("Informe o desconto (ex., 0.20 para 20%):");
+            System.out.println("Informe o desconto (ex., 0,20 para 20%):");
             double discountRate = scanner.nextDouble();
         }
     }
