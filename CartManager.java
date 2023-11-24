@@ -14,10 +14,10 @@ public class CartManager {
         System.out.println("Informe o preço do produto:");
         double price = scanner.nextDouble();
 
-        System.out.println("É um produto com desconto? (sim/não)");
+        System.out.println("É um produto com desconto? (s/n)");
         String isDiscounted = scanner.next();
 
-        if ("sim".equalsIgnoreCase(isDiscounted)) {
+        if ("s".equalsIgnoreCase(isDiscounted)) {
             System.out.println("Informe o desconto (ex., 0,20 para 20%):");
             double discountRate = scanner.nextDouble();
         }
