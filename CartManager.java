@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CartManager {
     private Scanner scanner;
+    private List<CartItem> cartItems;
+
 
     public CartManager() {
         this.scanner = new Scanner(System.in);
-    }
+        this.cartItems = new ArrayList<>();
+    }   
 
     public void addProduct() {
         System.out.println("Informe o nome do produto:");
@@ -14,6 +19,13 @@ public class CartManager {
         System.out.println("Informe o preço do produto:");
         double price = scanner.nextDouble();
 
+        Product product = new Product(name, price);
+        System.out.println("Informe a quantidade do produto:");
+        int quantity = scanner.nextInt();
+        CartItem cartItem = new CartItem(product, quantity);
+        cartItems.add(cartItem);
+
+        
         System.out.println("É um produto com desconto? (s/n)");
         String isDiscounted = scanner.next();
 
