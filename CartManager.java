@@ -39,20 +39,4 @@ public class CartManager {
         System.out.println("Informe o nome do produto para remover:");
         String productName = scanner.next();
     }
-
-    //Exibir informações do carrinho
-    public void displayCart() {
-        if (cartItems.isEmpty()) {
-            System.out.println("O carrinho está vazio.");
-        } else {
-            System.out.println("Produtos no carrinho:");
-            for (CartItem cartItem : cartItems) {
-                Product product = cartItem.getProduct();
-                System.out.println("Nome: " + product.getProductName() +
-                                   ", Preço: " + product.getPrice() +
-                                   ", Quantidade: " + cartItem.getQuantity());
-            }
-        }
-    }
-
 }
