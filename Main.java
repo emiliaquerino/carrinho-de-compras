@@ -16,8 +16,7 @@ public class Main {
                     cartManager.removeProduct();
                     break;
                 case 3:
-                    cartManager.displayCart();
-                    //System.out.println("carrinho de compras"); //remover essa linha posteriori 
+                    System.out.println("carrinho de compras"); //remover essa linha posteriori 
                     break;
                 case 4:
                     System.exit(0);
