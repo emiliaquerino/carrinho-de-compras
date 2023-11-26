@@ -7,10 +7,10 @@ public class Product {
     private int productId;
 
     //método construtor
-    public Product(String name, double price, int productId) {
-        this.name=name;
-        this.price=price;
-        this.productId=productId;
+    public Product(String productName, double price) {
+        this.productName = productName;
+        this.price = price;
+        
     }
     //métodos Get e Set
     public String getProductName() {
