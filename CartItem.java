@@ -1,15 +1,12 @@
 public class CartItem {
-    private Product product; //product é uma instância da classe Product
-    private int quantity; //quantity é um inteiro que irá representar a quantidade
-
-    // método construtor (Que irá receber o médoto Product e o inteiro quantity )
+    private Product product; 
+    private int quantity; 
 
     public CartItem(Product product, int quantity) {
         this.product = product; 
         this.quantity = quantity;
     }
 
-    // Adicionando os métodos getters e setters ao código
     public Product getProduct() {
         return product;
     }
