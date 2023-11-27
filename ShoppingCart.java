@@ -4,16 +4,13 @@ import java.util.List;
 
 public class ShoppingCart {
     private List<CartItem> items;
-    private int quantity;
 
     public ShoppingCart() {
         this.items = new ArrayList<>();
-        this.quantity = 0;
     }
 
-    public void addItem(CartItem item) { //adiocionar item
-        items.add(item);
-        quantity += 1;
+    public void addProduct(Product product, int quantity) {
+        items.add(new CartItem(product, quantity));
     }
 
     public void removeItem(int productId) {
