@@ -2,14 +2,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-class CartItem {
-    private int productId;
-    private String productName;
-    private double price;
-
-    // Construtor, getters e setters omitidos para simplificar
-}
-
 public class ShoppingCart {
     private List<CartItem> items;
     private int quantity;
