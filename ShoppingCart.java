@@ -19,7 +19,7 @@ public class ShoppingCart {
         this.quantity = 0;
     }
 
-    public void addItem(CartItem item) {
+    public void addItem(CartItem item) { //adiocionar item
         items.add(item);
         quantity += 1;
     }
