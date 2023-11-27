@@ -13,16 +13,8 @@ public class ShoppingCart {
         items.add(new CartItem(product, quantity));
     }
 
-    public void removeItem(int productId) {
-        Iterator<CartItem> iterator = items.iterator();
-        while (iterator.hasNext()) {
-            CartItem item = iterator.next();
-            if (item.getProductId() == productId) {
-                iterator.remove();
-                quantity -= 1;
-                break;
-            }
-        }
+    public void removeProduct(String productName) {
+        items.removeIf(item -> item.getProduct().getProductName().equals(productName));
     }
 
     public void displayCart() {
