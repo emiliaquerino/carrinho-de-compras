@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        CartManager cartManager = new CartManager();
+        ShoppingCart cart = new ShoppingCart();
+        CartManager cartManager = new CartManager(cart);
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -16,7 +17,7 @@ public class Main {
                     cartManager.removeProduct();
                     break;
                 case 3:
-                    System.out.println("carrinho de compras"); //remover essa linha posteriori 
+                    cart.displayCart();
                     break;
                 case 4:
                     System.exit(0);
