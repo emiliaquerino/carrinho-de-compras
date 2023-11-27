@@ -29,7 +29,8 @@ public class ShoppingCart {
         System.out.println("Carrinho de Compras:");
         for (CartItem item : items) {
             System.out.println("Nome do produto: " + item.getProduct().getProductName());
-            System.out.println("Preço: R$" + item.getProduct().getPrice());
+            System.out.println("Preço: R$ " + item.getProduct().getPrice());
+            System.out.println("Quantidade: " + item.getQuantity());
             System.out.println("---------------------------");
         }
         System.out.println("Total: " + getTotal());
