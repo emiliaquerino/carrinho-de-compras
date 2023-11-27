@@ -1,11 +1,11 @@
 public class CartItem {
-    private Product product;
-    private int quantity;
+    private Product product; //product é uma instância da classe Product
+    private int quantity; //quantity é um inteiro que irá representar a quantidade
 
-    // método construtor
+    // método construtor (Que irá receber o médoto Product e o inteiro quantity )
 
     public CartItem(Product product, int quantity) {
-        this.product = product;
+        this.product = product; 
         this.quantity = quantity;
     }
 
