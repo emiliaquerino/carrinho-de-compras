@@ -17,14 +17,21 @@ public class ShoppingCart {
         items.removeIf(item -> item.getProduct().getProductName().equals(productName));
     }
 
-    public void displayCart() {
-        System.out.println("Shopping Cart:");
+    public double getTotal() {
+        double total = 0;
         for (CartItem item : items) {
-            System.out.println("Product ID: " + item.getProductId());
-            System.out.println("Product Name: " + item.getProductName());
-            System.out.println("Price: $" + item.getPrice());
+            total += item.getProduct().getPrice() * item.getQuantity();
+        }
+        return total;
+    }
+
+    public void displayCart() {
+        System.out.println("Carrinho de Compras:");
+        for (CartItem item : items) {
+            System.out.println("Nome do produto: " + item.getProduct().getProductName());
+            System.out.println("Preço: R$" + item.getProduct().getPrice());
             System.out.println("---------------------------");
         }
-        System.out.println("Total Items: " + quantity);
+        System.out.println("Total: " + getTotal());
     }
 }
